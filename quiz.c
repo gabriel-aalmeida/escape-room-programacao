@@ -24,6 +24,40 @@ int main() {
     char resposta;
   exibirBoasVindas();
 
+  printf("Pressione ENTER para comecar...\n");
+    getchar();
+    printf("\n");
+   
+    acertos += fazerPergunta(
+        1,
+        "Qual selecao ganhou a Copa do Mundo de 2022 no Qatar?",
+        "A) Brasil",
+        "B) Franca",
+        "C) Argentina",
+        "D) Alemanha",
+        'C'
+    );
+
+    acertos += fazerPergunta(
+        2,
+        "Quantas vezes o Brasil ganhou a Copa do Mundo?",
+        "A) 4 vezes",
+        "B) 5 vezes",
+        "C) 3 vezes",
+        "D) 6 vezes",
+        'B'
+    );
+   
+    acertos += fazerPergunta(
+        3,
+        "Quem foi o artilheiro da Copa do Mundo de 2022?",
+        "A) Mbappe",
+        "B) Messi",
+        "C) Neymar",
+        "D) Benzema",
+        'A'
+    );
+
     return 0;
 }
 
