@@ -2,7 +2,7 @@
  * =====================================================
  *  QUIZ DA COPA DO MUNDO - Escape Room: Estadio Secreto
  *  Atividade Final - Gamificacao
- *  Disciplina: Introducao a Programacao
+ *  Disciplina: Logica da programacao
  *  Aluno: Gabriel de Almeida Alfredo
  * =====================================================
  */
