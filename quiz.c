@@ -40,3 +40,34 @@ void exibirBoasVindas() {
     printf("Voce consegue escapar?\n\n");
     printf("-----------------------------------------------------\n");
 }
+
+int fazerPergunta(int numero, const char *pergunta,
+                  const char *a, const char *b, const char *c, const char *d,
+                  char respostaCorreta) {
+    char resposta;
+
+    printf("[ Pergunta %d de %d ]\n", numero, TOTAL_PERGUNTAS);
+    printf("%s\n\n", pergunta);
+    printf("  %s\n", a);
+    printf("  %s\n", b);
+    printf("  %s\n", c);
+    printf("  %s\n\n", d);
+    printf("Sua resposta (A/B/C/D): ");
+
+    scanf(" %c", &resposta);
+    while (getchar() != '\n');
+
+    if (resposta >= 'a' && resposta <= 'd') {
+        resposta = resposta - 32; 
+    }
+
+    if (resposta == respostaCorreta) {
+        printf("\n[-] Correto! Voce avancou no estadio!\n");
+        printf("-----------------------------------------------------\n\n");
+        return 1;
+    } else {
+        printf("\n[-] Errado! A resposta certa era %c.\n", respostaCorreta);
+        printf("-----------------------------------------------------\n\n");
+        return 0;
+    }
+}
