@@ -22,6 +22,21 @@ int main() {
     int pontos  = 0;
     int acertos = 0;
     char resposta;
+  exibirBoasVindas();
 
     return 0;
+}
+
+void exibirBoasVindas() {
+    printf("=====================================================\n");
+    printf("     QUIZ DA COPA DO MUNDO - ESTADIO SECRETO\n");
+    printf("=====================================================\n\n");
+
+    printf("HISTORIA:\n");
+    printf("Voce foi trancado no estadio secreto da FIFA!\n");
+    printf("A unica saida e responder 8 perguntas sobre a\n");
+    printf("Copa do Mundo corretamente.\n");
+    printf("Cada acerto vale %d pontos.\n\n", PONTOS_POR_ACERTO);
+    printf("Voce consegue escapar?\n\n");
+    printf("-----------------------------------------------------\n");
 }
