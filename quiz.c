@@ -58,6 +58,36 @@ int main() {
         'A'
     );
 
+  acertos += fazerPergunta(
+        4,
+        "Em qual pais foi realizada a Copa do Mundo de 2014?",
+        "A) Africa do Sul",
+        "B) Russia",
+        "C) Brasil",
+        "D) Alemanha",
+        'C'
+    );
+ 
+    acertos += fazerPergunta(
+        5,
+        "Qual foi o placar da final da Copa de 2022 (Argentina x Franca)?",
+        "A) 3 x 1",
+        "B) 2 x 0",
+        "C) 3 x 3 (Argentina venceu nos penaltis)",
+        "D) 4 x 2",
+        'C'
+    );
+    
+    acertos += fazerPergunta(
+        6,
+        "Quem e o maior artilheiro da historia das Copas do Mundo?",
+        "A) Pele",
+        "B) Ronaldo Fenomeno",
+        "C) Miroslav Klose",
+        "D) Gerd Muller",
+        'C'
+    );
+
     return 0;
 }
 
