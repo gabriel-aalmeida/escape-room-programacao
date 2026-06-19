@@ -1,12 +1,3 @@
-/*
- * =====================================================
- *  QUIZ DA COPA DO MUNDO - Escape Room: Estadio Secreto
- *  Atividade Final - Gamificacao
- *  Disciplina: Logica da programacao
- *  Aluno: Gabriel de Almeida Alfredo
- * =====================================================
- */
-
 #include <stdio.h>
 
 #define TOTAL_PERGUNTAS 8
