@@ -88,6 +88,26 @@ int main() {
         'C'
     );
 
+  acertos += fazerPergunta(
+        7,
+        "Qual pais esta sediando a Copa do Mundo de 2026?",
+        "A) Apenas os Estados Unidos",
+        "B) Canada, EUA e Mexico",
+        "C) Argentina e Brasil",
+        "D) Apenas o Mexico",
+        'B'
+    );
+
+    acertos += fazerPergunta(
+        8,
+        "Qual selecao levou o titulo em 2018 na Russia?",
+        "A) Croacia",
+        "B) Belgica",
+        "C) Inglaterra",
+        "D) Franca",
+        'D'
+    );
+
     return 0;
 }
 
