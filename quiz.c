@@ -108,6 +108,9 @@ int main() {
         'D'
     );
 
+  pontos = acertos * PONTOS_POR_ACERTO;
+    exibirResultado(pontos, acertos);
+
     return 0;
 }
 
@@ -154,4 +157,29 @@ int fazerPergunta(int numero, const char *pergunta,
         printf("-----------------------------------------------------\n\n");
         return 0;
     }
+}
+
+void exibirResultado(int pontos, int acertos) {
+    printf("=====================================================\n");
+    printf("              RESULTADO FINAL\n");
+    printf("=====================================================\n\n");
+
+    printf("Voce acertou %d de %d perguntas!\n", acertos, TOTAL_PERGUNTAS);
+    printf("Pontuacao total: %d pontos\n\n", pontos);
+
+    if (acertos == TOTAL_PERGUNTAS) {
+        printf("PARABENS! Voce acertou tudo e escapou do\n");
+        printf("estadio secreto! Voce e um craque da Copa!\n");
+    } else if (acertos >= 6) {
+        printf("Muito bom! Voce escapou por pouco. Seu conhecimento\n");
+        printf("sobre a Copa do Mundo e excelente!\n");
+    } else if (acertos >= 4) {
+        printf("Resultado razoavel. Voce ficou preso no estadio,\n");
+        printf("mas aprendeu bastante sobre a Copa!\n");
+    } else {
+        printf("Que pena! Voce ficou trancado no estadio.\n");
+        printf("Estude mais sobre a Copa do Mundo e tente de novo!\n");
+    }
+
+    printf("\n=====================================================\n");
 }
